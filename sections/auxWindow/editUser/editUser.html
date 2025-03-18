@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>WriteWay - Perfil de Usuario</title>
+        <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+        <!-- Style links -->
+        <link rel="stylesheet" href="./editUser.css">
+    </head>
+    <body>
+        <div class="full-container">
+            <div class="header-container">
+                <img class="logo-title" src="../../../assets/img/logo/logo-title-white2.png">
+                <div class="icons-header-container"></div>
+            </div>
+            <div class="content">
+                <span class="title-element">PERFIL DE USUARIO</span>
+                <div class="form-container">
+                    <div class="two-input-container">
+                        <div>
+                            <div class="input-label">Nombre de usuario</div>
+                            <input id="editUsername" class="edit-input" type="text" name="username">
+                        </div>
+                        <div>
+                            <div class="input-label">Nombre de autor</div>
+                            <input id="editAuthorname" class="edit-input" type="text" name="authorname">                 
+                        </div>
+                    </div>
+                    <div class="two-input-container">
+                        <div>
+                            <div class="input-label">Contraseña</div>
+                            <input id="editPassword1" class="edit-input" type="password" name="password" placeholder="Nueva contraseña">                       
+                        </div>
+                        <div>
+                            <div class="input-label">Repite contraseña</div>
+                            <input id="editPassword2" class="edit-input" type="password" name="password" placeholder="Repite contraseña" disabled>               
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-label">Correo electrónico</div>
+                        <input id="editEmail" class="edit-input email-input" type="text" name="email" disabled>               
+                    </div>                                      
+                </div>
+                <div class="buttons-container">
+                    <button id="backBtn" class="project-button">Volver</button>
+                    <button id="updateBtn" class="project-button">Actualizar</button>
+                    <button id="deleteBtn" class="delete-button">Borrar cuenta</button>
+                </div>
+            </div>
+        </div>
+        <svg id="userIcon" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0001 32.5833C8.39364 32.5833 1.41675 25.6064 1.41675 17C1.41675 8.39352 8.39364 1.41663 17.0001 1.41663C25.6065 1.41663 32.5834 8.39352 32.5834 17C32.5834 25.6064 25.6065 32.5833 17.0001 32.5833ZM27.4827 24.2599C28.9123 22.1996 29.7501 19.6976 29.7501 17C29.7501 9.95835 24.0417 4.24998 17.0001 4.24998C9.95846 4.24998 4.25009 9.95835 4.25009 17C4.25009 19.6976 5.08788 22.1996 6.51747 24.2599C8.11185 22.1539 11.8584 21.25 17.0001 21.25C22.1417 21.25 25.8883 22.1539 27.4827 24.2599ZM25.45 26.548C25.0354 25.0571 22.0567 24.0833 17.0001 24.0833C11.9435 24.0833 8.96476 25.0571 8.55011 26.548C10.7998 28.5404 13.7587 29.75 17.0001 29.75C20.2415 29.75 23.2004 28.5404 25.45 26.548ZM17.0001 8.49998C13.5705 8.49998 11.3334 10.9873 11.3334 14.1666C11.3334 19.0221 13.828 21.25 17.0001 21.25C20.1424 21.25 22.6667 19.0961 22.6667 14.45C22.6667 11.2222 20.4202 8.49998 17.0001 8.49998ZM14.1667 14.1666C14.1667 17.3814 15.3259 18.4166 17.0001 18.4166C18.6685 18.4166 19.8334 17.4227 19.8334 14.4499C19.8334 12.6797 18.7223 11.3333 17.0001 11.3333C15.2062 11.3333 14.1667 12.489 14.1667 14.1666Z"/>
+        </svg>
+        <svg id="keyIcon1" viewBox="0 0 30 32" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 12C10 6.8453 13.9175 2.66663 18.75 2.66663C23.5825 2.66663 27.5 6.8453 27.5 12C27.5 17.1546 23.5825 21.3333 18.75 21.3333H16.25V24H13.75V26.6666H11.25V29.3333H2.5V22.1143L10.185 13.917C10.0624 13.2913 10 12.6497 10 12ZM13.75 21.3333V18.6666H18.75C22.2018 18.6666 25 15.6819 25 12C25 8.31807 22.2018 5.3333 18.75 5.3333C15.2982 5.3333 12.5 8.31807 12.5 12C12.5 12.6648 12.5909 13.3151 12.7676 13.9371L12.9848 14.7017L4.99999 23.2189V26.6666H8.74999V24H11.25V21.3333H13.75ZM16.25 12C16.25 13.4727 17.3693 14.6666 18.75 14.6666C20.1307 14.6666 21.25 13.4727 21.25 12C21.25 10.5272 20.1307 9.3333 18.75 9.3333C17.3693 9.3333 16.25 10.5272 16.25 12Z"/>
+        </svg>
+        <svg id="keyIcon2" viewBox="0 0 30 32" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 12C10 6.8453 13.9175 2.66663 18.75 2.66663C23.5825 2.66663 27.5 6.8453 27.5 12C27.5 17.1546 23.5825 21.3333 18.75 21.3333H16.25V24H13.75V26.6666H11.25V29.3333H2.5V22.1143L10.185 13.917C10.0624 13.2913 10 12.6497 10 12ZM13.75 21.3333V18.6666H18.75C22.2018 18.6666 25 15.6819 25 12C25 8.31807 22.2018 5.3333 18.75 5.3333C15.2982 5.3333 12.5 8.31807 12.5 12C12.5 12.6648 12.5909 13.3151 12.7676 13.9371L12.9848 14.7017L4.99999 23.2189V26.6666H8.74999V24H11.25V21.3333H13.75ZM16.25 12C16.25 13.4727 17.3693 14.6666 18.75 14.6666C20.1307 14.6666 21.25 13.4727 21.25 12C21.25 10.5272 20.1307 9.3333 18.75 9.3333C17.3693 9.3333 16.25 10.5272 16.25 12Z"/>
+        </svg>
+        <svg id="authorIcon" viewBox="0 0 56 53" xmlns="http://www.w3.org/2000/svg">
+            <g id="24 / basic / pencil-edit">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M51.3333 44.1665V28.7082H46.6667V44.1665H9.33332V8.83317H25.6667V4.4165H9.33332C6.75599 4.4165 4.66666 6.39391 4.66666 8.83317V44.1665C4.66666 46.6058 6.75599 48.5832 9.33332 48.5832H46.6667C49.244 48.5832 51.3333 46.6058 51.3333 44.1665ZM44.7489 6.01406C43.6793 4.99381 42.2149 4.4165 40.6871 4.4165C39.1611 4.4165 37.6982 4.9925 36.6226 6.01672L17.0951 24.4978C15.3502 25.9529 14.2063 28.1182 14.0076 30.4468L14 37.5466V39.755H23.6474C26.2941 39.5832 28.6044 38.49 30.2342 36.7106L49.651 18.3419C50.7283 17.3224 51.3334 15.9396 51.3334 14.4977C51.3334 13.0559 50.7283 11.6731 49.651 10.6535L44.7489 6.01406ZM23.4826 35.3438C24.7291 35.2603 25.8895 34.7113 26.8212 33.7026L40.9656 20.3159L34.539 14.2331L20.2909 27.7135C19.3455 28.5048 18.7607 29.6119 18.6667 30.6246V35.3397L23.4826 35.3438ZM37.8393 11.1106L44.2655 17.1928L46.3512 15.2188C46.5533 15.0276 46.6668 14.7682 46.6668 14.4977C46.6668 14.2273 46.5533 13.9679 46.3512 13.7766L41.4426 9.13098C41.2428 8.94038 40.9708 8.83317 40.6871 8.83317C40.4034 8.83317 40.1315 8.94038 39.9317 9.13098L37.8393 11.1106Z"/>
+            </g>
+        </svg>
+        <svg id="mailIcon" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 4H26.25C27.6307 4 28.75 5.19391 28.75 6.66667V25.3333C28.75 26.8061 27.6307 28 26.25 28H3.75C2.36929 28 1.25 26.8061 1.25 25.3333V6.66667C1.25 5.19391 2.36929 4 3.75 4ZM3.74999 12.8241V25.3333H26.25V12.8247L15 18.8247L3.74999 12.8241ZM3.74999 9.84261L15 15.8432L26.25 9.84324V6.66668H3.74999V9.84261Z"/>
+        </svg>
+        <script type="text/javascript">
+            require('../../../scripts/auxWindow/editUser.js')
+        </script>
+    </body>
+</html>

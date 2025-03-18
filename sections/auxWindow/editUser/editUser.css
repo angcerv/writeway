@@ -1,0 +1,194 @@
+@import "../auxWindow.css";
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vw;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 0.5fr 3fr 1fr;
+    margin-top: 3vw;
+}
+
+.delete-button {
+    background-color: #6d0909;
+    border-radius: 40px;
+    color: var(--primary-color-light);
+    font-size: 1.4vw;
+    font-weight: var(--font-quicksand-light);
+    width: 20vw;
+    height: 3.5vw;
+    border: none;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.delete-button:hover {
+    background-color: rgb(141, 12, 12)
+}
+
+.edit-input {
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-bottom: 3vw;
+    padding-left: 4.5vw;
+    width: 30vw;
+    height: 4.5vw;
+    background-color: var(--secondary-color-dark);
+    border: none;
+    border-radius: 5px 5px 0 0;
+    color: var(--primary-color-light);
+    font-size: 1.6vw;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: var(--font-quicksand-light);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--secondary-color-dark);
+}
+
+.edit-input::placeholder {
+    font-size: 1.6vw;
+    color: var(--secondary-color-light);
+}
+
+.edit-input:focus {
+    outline: 0;
+    border: 1px solid white;
+}
+
+.edit-input:disabled {
+    opacity: 60%;
+}
+
+.email-input {
+    width: 69.7vw;
+}
+
+.edit-title {
+    margin-top: 1.15vw;
+    margin-left: 7.4vw;
+    margin-right: 2.5vw;
+    margin-bottom: 3vw;
+    font-size: 2.1vw;
+    font-weight: 300;
+    width: 30vw;
+    height: 4.5vw;
+}
+
+.form-container {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-container {
+    background-color: #252526;
+    height: 100%;
+    color :#C4C4C4;
+}
+
+.header-container {
+    width: 100%;
+    padding-bottom: 1vw;
+}
+
+.header-icon {
+    height: 3.2vw;
+    margin-right: 1.5vw;
+    cursor: pointer;
+}
+
+.icons-header-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    float: right;
+    margin-top: 1.3vw;
+    margin-right: 3vw;
+}
+
+.input-label {
+    font-weight: var(--font-quicksand-light);
+    font-size: 1.3vw;
+    margin-left: 3vw;
+    margin-bottom: 1vw;
+    text-align: left;
+}
+
+.title-element {
+    color: var(--secondary-color-light);
+    font-weight: var(--font-quicksand-light);
+    font-size: 2vw;
+    margin-left: 13vw;
+}
+
+.two-input-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.project-button {
+    background-color: var(--primary-color-theme);
+    border-radius: 40px;
+    color: var(--primary-color-light);
+    font-size: 1.4vw;
+    font-weight: var(--font-quicksand-light);
+    width: 20vw;
+    height: 3.5vw;
+    border: none;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.project-button:hover {
+    background-color: var(--secondary-color-theme);
+}
+
+.project-button:disabled {
+    opacity: 60%;
+    cursor: auto;
+}
+
+#userIcon {
+    position: absolute;
+    height: 2.5vw;
+    bottom: 36.7vw;
+    left: 13.7vw;
+    fill: #C4C4C4;
+}
+
+#keyIcon1 {
+    position: absolute;
+    height: 2.5vw;
+    bottom: 26.2vw;
+    left: 13.7vw;
+    fill: #C4C4C4;
+}
+
+#keyIcon2 {
+    position: absolute;
+    height: 2.5vw;
+    bottom: 26.2vw;
+    left: 53.6vw;
+    fill: #C4C4C4;
+}
+
+#authorIcon {
+    position: absolute;
+    height: 2.5vw;
+    bottom: 36.7vw;
+    left: 53.6vw;
+    fill: #C4C4C4;
+}
+
+#mailIcon {
+    position: absolute;
+    height: 2.5vw;
+    bottom: 15.6vw;
+    left: 13.7vw;
+    fill: rgba(196, 196, 196, 0.6);
+    /* fill: #C4C4C4; */
+}

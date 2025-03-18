@@ -1,0 +1,41 @@
+@import "../auxWindow.css";
+
+.checkbox-label {
+    font-size: 1.2vw;
+    font-weight: var(--font-quicksand-light);
+    display: inline-block;
+    position: relative;
+    padding-left: 5%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.left-button-login {
+    font-size: 1.2vw;
+}
+
+.login-input {
+    margin-top: 3vw;
+}
+
+.right-grid {
+    grid-template-rows: 2fr 2fr 0.4fr 2fr;
+}
+
+#svgKey {
+    position: relative;
+    height: 2.5vw;
+    bottom: 27.2vw;
+    left: 53.7vw;
+    fill: #C4C4C4;
+}
+
+#svgMail {
+    position: relative;
+    height: 2.5vw;
+    bottom: 35.1vw;
+    left: 56.3vw;
+    fill: #C4C4C4;
+}

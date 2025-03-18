@@ -1,0 +1,149 @@
+:root {
+    /* Colors */
+    --primary-color-theme: #29676D; 
+    --secondary-color-theme: #3F888F;
+
+    --primary-color-dark:#252526;
+    --secondary-color-dark: #454546;
+    --third-color-dark: #333333;
+    --forth-color-dark: #575757;
+    --fifth-color-dark: #1E1E1E;
+
+    --primary-color-light: #FFFFFF;
+    --secondary-color-light:#C4C4C4;
+    
+    /* Fonts weight */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../assets/fonts/quicksand/Quicksand-VariableFont_wght.ttf')
+      format("truetype-variations");
+      font-weight: 100 1000;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Quicksand';
+}
+
+button:focus {
+    outline: 0;
+}
+
+.disabled-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+input {
+    font-family: 'Quicksand';
+}
+
+input:focus {
+    outline: 0;
+}
+
+select {
+    font-family: 'Quicksand';
+}
+
+select:focus {
+    outline: 0;
+}
+
+textarea {
+    font-family: 'Quicksand';
+}
+
+textarea:focus {
+    outline: 0;
+}
+
+.list-hover-1 {
+    background-color: var(--third-color-dark);
+}
+
+.list-hover-1:hover {
+    background-color: var(--forth-color-dark);
+}
+
+.margin-sides-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.svg-fill-1 {
+    fill: #C4C4C4;
+}
+
+.svg-fill-1:hover {
+    fill: #3F888F;
+}
+
+.svg-fill-2 {
+    fill: #C4C4C4;
+}
+
+.svg-fill-2:hover {
+    fill: #950404;
+}
+
+.svg-fill-3 {
+    fill: #a5a4a4;
+}
+
+.svg-fill-3:hover {
+    fill: #950404;
+}
+
+.svg-stroke-1 {
+    stroke: white;
+}
+
+.svg-stroke-1:hover {
+    stroke: #3F888F;
+}
+
+.svg-stroke-2 {
+    stroke: #C4C4C4;
+}
+
+.svg-stroke-2:hover {
+    stroke: #3F888F;
+}
+
+.svg-stroke-3 {
+    stroke: #a5a4a4;
+}
+
+.svg-stroke-3:hover {
+    stroke: #3F888F;
+}
+
+.vertical-scroll-container {
+    overflow-x:hidden;
+    overflow-y:scroll;
+}

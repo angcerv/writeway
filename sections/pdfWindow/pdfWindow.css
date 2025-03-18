@@ -1,0 +1,23 @@
+.author {
+    margin-top: 10vw;
+    margin-right: 8vw;
+    font-size: 2vw;
+    text-align: right;
+}
+
+.title {
+    font-size: 2.2vw;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 8vw;
+}
+
+.content {
+    color: black !important;
+    font-size: 1.5vw;
+    font-weight: 400;
+    width: 80%;
+    margin-top: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+}

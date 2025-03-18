@@ -1,0 +1,120 @@
+@import "../auxWindow.css";
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    margin-left: 4.6vw;
+    margin-top: 15vw;
+}
+
+.content {
+    height: 100%;
+    padding-left: 14vw;
+    padding-top: 10vw;
+}
+
+.input-icon {
+    height: 4vw;
+    position: absolute;
+    bottom: 20vw;
+    left: 10vw;
+}
+
+.np-button {
+    padding: 2% 18% 2% 18%;
+    background-color: var(--primary-color-theme);
+    border-radius: 40px;
+    color: var(--primary-color-light);
+    font-size: 1.4vw;
+    font-weight: var(--font-weight-light);
+    width: 22vw;
+    height: 3.5vw;
+    border: none;
+}
+
+.np-button:hover {
+    background-color: var(--secondary-color-theme);
+}
+
+.np-button:disabled {
+    opacity: 60%;
+    cursor: auto;
+}
+
+.np-title-element {
+    color: var(--secondary-color-light);
+    font-weight: var(--font-weight-light);
+    font-size: 2vw;
+}
+
+.proy-input {
+    margin-top: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 63vw;
+    height: 7vw;
+    background-color: var(--secondary-color-dark);
+    border: none;
+    border-radius: 5px 5px 0 0;
+    padding-left: 8vw;
+    padding-top: 0.6vw;
+    color: var(--primary-color-light);
+    font-size: 2.2vw;
+    font-family: 'weight', sans-serif;
+    font-weight: var(--font-weight-light);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--secondary-color-dark);
+}
+
+.proy-input::placeholder {
+    font-size: 2.2vw;
+    color: var(--secondary-color-light);
+}
+
+.proy-input:focus {
+    outline: 0;
+    border: 1px solid white;
+}
+
+.share-container {
+    margin-top: 0.7vw;
+}
+
+.share-button {
+    width: 20vw;
+    background-color: #496F72;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    color: white;
+    border-radius: 5px;
+    float: right;
+    font-size: 1.3vw;
+    font-weight: var(--font-weight-light);
+    font-family: 'weight', sans-serif;
+    margin-right: 1vw;
+    border: 1px solid #496F72;
+}
+
+.share-button:hover {
+    background-color: #496f72d3;
+}
+
+.share-button:focus {
+    border: 1px solid var(--primary-color-theme);
+}
+
+.share-icon {
+    height: 1.9vw;
+    fill: none;
+    float: right;
+    margin-right: 15vw;
+    margin-top: 0.3vw;
+    cursor: help;
+}
+
+#svgPenTool {
+    position: absolute;
+    height: 4.3vw;
+    bottom: 32vw;
+    left: 16.1vw;
+}

@@ -1,0 +1,80 @@
+@import "../style.css";
+@import "../mainWindow/mainWindowStyle/mh-mainHeader.css";
+@import "../mainWindow/mainWindowStyle/ab-asidebar.css";
+@import "../mainWindow/mainWindowStyle/wn-worknav.css";
+@import "../mainWindow/mainWindowStyle/wa-workarea.css";
+@import "../mainWindow/mainWindowStyle/cn-consultnav.css";
+@import "../mainWindow/mainWindowStyle/tree-view.css";
+@import "../mainWindow/mainWindowStyle/textEditorStyle.css";
+@import "../mainWindow/custom.css";
+
+body {
+    background-color: #1E1E1E;
+    color :#C4C4C4;
+    overflow: hidden;
+}
+
+.ck-editor {
+    display: block;
+    padding: 5rem 0;
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.section-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3.2vw 100%;
+}
+
+/** WORKNAV **/
+#worknav {
+    width: 0;
+    /* width: 19vw; */
+}
+
+#worknavWrite {
+    display: none;
+}
+
+#worknavTemplates {
+    display: none;
+}
+
+#worknavSheets {
+    display: none;
+}
+
+/** CONSULTNAV **/
+#consultnav {
+    width: 0;
+}
+
+/** WORKAREA **/
+#workarea {
+    width: 96.3vw;
+}
+
+#writeWorkarea {
+    display: none;
+}
+
+#templateWorkarea {
+    display: none;
+}
+
+#sheetWorkarea {
+    display: none;
+}
+
+#commentWorkarea {
+    display: none;
+}
+
+#aSaveContent {
+    display: none;
+}
+/* 
+#aSettingsExport {
+    display: none;
+} */

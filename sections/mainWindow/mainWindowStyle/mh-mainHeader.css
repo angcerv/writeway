@@ -1,0 +1,79 @@
+.mh-container {
+    height: 4vw;
+    border-bottom: 1px solid #C4C4C4;
+    display: grid;
+    grid-template-columns: 0.3fr 4fr 0.4fr;
+    text-align: center;
+}
+
+.mh-icon {
+    width: 2.1vw;
+}
+
+.mh-options {
+    padding-top: 0.8vw;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding-right: 0.5vw;
+}
+
+.mh-project-title {
+    width: 15vw;
+    background-color: rgba(196, 196, 196, 0.13);
+    border-radius: 10px;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    margin-top: 0.95vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1vw;
+    font-weight: var(--font-quicksand-light);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.mh-settings-dropdown {
+    position: relative;
+    display: inline-block;
+}  
+
+.mh-settings-dropdown:hover .mh-settings-dropdown-content {
+    display: block;
+}
+.mh-settings-dropdown:hover .mh-icon {
+    fill: #3F888F;
+}
+
+.mh-settings-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    border-radius: 5px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+.mh-settings-dropdown-content a {
+    color: #C4C4C4;
+    border-radius: 5px;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid #C4C4C4;
+    margin: 2px 2px;
+    background-color: var(--third-color-dark);
+    font-size: 1vw;
+    text-align: left;
+    padding-left: 1vw;
+}
+
+.mh-settings-dropdown-content a:hover {
+    background-color: var(--forth-color-dark);
+}
+
+#mhAppLogo {
+    height: 2.6vw;
+    margin-top: 0.7vw;
+    margin-left: 1.2vw;
+}

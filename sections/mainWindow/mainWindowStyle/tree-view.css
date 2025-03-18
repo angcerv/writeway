@@ -1,0 +1,135 @@
+ul, .myUL {
+    list-style-type: none;
+}
+
+.myUL {
+    margin: 0;
+    padding: 0;
+}
+
+.caret {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+}
+
+.caret::before {
+    content: "\25B6";
+    color: #C4C4C4;
+    display: inline-block;
+    margin-right: 0.6vw;
+    margin-left: 0.6vw;
+}
+
+.caret-down::before {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);  
+}
+
+.nested {
+    display: none;
+    background: #333333;
+}
+
+.active {
+    display: list-item;
+    border-left: 2px solid #C4C4C4;
+    margin-top: 15px;
+    width: inherit;
+}
+
+/** Tree style **/
+.tree-file {
+    display: list-item;
+    width: 100%;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    height: 29px;
+    padding-top: 10px;
+    padding-left: 10px;
+    position: relative;
+    left: -40px;
+}
+
+.tree-root {
+    display: inline-table;
+    width: 100%;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    height: 29px;
+    padding-top: 10px;
+    font-size: 1vw;
+}
+
+.tree-item-background {
+    background: #4C4C4C;
+}
+
+.tree-item-background:hover {
+    background: #646363;
+}
+
+/** Consult tree style **/
+.cn-tree-root {
+    display: inline-table;
+    width: 100%;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    height: 29px;
+    padding-top: 10px;
+    font-size: 1vw;
+}
+
+.cn-tree-item-background {
+    background: #333333;
+}
+
+.cn-tree-item-background:hover {
+    background: #4C4C4C;
+}
+
+.cn-tree-file {
+    display: list-item;
+    width: 100%;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    height: 29px;
+    padding-top: 10px;
+    padding-left: 10px;
+    position: relative;
+    left: -40px;
+}
+
+
+.cn-caret::before {
+    content: "\25B6";
+    color: #C4C4C4;
+    display: inline-block;
+    margin-right: 0.6vw;
+    margin-left: 0.6vw;
+}
+
+.cn-caret-down::before {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);  
+}
+
+.cn-nested {
+    display: none;
+    background: #333333;
+}
+
+.cn-active {
+    display: list-item;
+    border-left: 2px solid #C4C4C4;
+    margin-top: 15px;
+    width: inherit;
+}

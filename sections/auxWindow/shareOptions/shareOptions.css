@@ -1,0 +1,121 @@
+@import "../auxWindow.css";
+
+body {
+    background-color: var(--primary-color-dark);
+    color: white;
+}
+
+.message {
+    font-size: 1.2vw;
+    font-weight: var(--font-weight-light);
+    width: 27vw;
+    margin-top: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.so-share-button {
+    display: block;
+    padding: 0.5vw 10vw 0.5vw 10vw;
+    background-color: var(--primary-color-theme);
+    border-radius: 40px;
+    color: var(--primary-color-light);
+    font-size: 1.4vw;
+    font-weight: var(--font-quicksand-light);
+    margin-top: 1.7vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3.5vw;
+    border: none;
+}
+
+.so-share-button:hover {
+    background-color: var(--secondary-color-theme);
+}
+
+.so-full-container {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.so-input-container {
+    display: block;
+    width: 100%;
+}
+
+.so-input-icon {
+    height: 2vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+
+.so-list-deleteIcon {
+    margin-top: 0.4vw;
+    height: 1.5vw;
+}
+
+.so-list-item {
+    padding-top: 0.8vw;
+    margin-top: 1vw;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 0.2fr;
+    text-align: center;
+    background: #496F72;
+    border-radius: 5px;
+    height: 3vw;
+}
+
+.so-list-item:hover {
+    background: #5b8a8d;
+}
+
+.so-list-titles {
+    margin-top: 4vw;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 0.2fr;
+}
+
+.so-list-title {
+text-align: center;
+}
+
+.so-share-input {
+    float: left;
+    margin-top: 2vw;
+    height: 3vw;
+    width: 40vw;
+    background-color: var(--secondary-color-dark);
+    border: none;
+    border-radius: 5px 5px 0 0;
+    padding-left: 1vw;
+    padding-top: 0.6vw;
+    color: var(--primary-color-light);
+    font-size: 1.2vw;
+    font-family: 'weight', sans-serif;
+    font-weight: var(--font-weight-light);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--secondary-color-dark);
+}
+
+.so-share-input::placeholder {
+    font-size: 1.2vw;
+    color: var(--secondary-color-light);
+}
+
+.so-share-input:focus {
+    outline: 0;
+    border: 1px solid white;
+}
+
+.so-sharelist {
+    height: 20vw;
+    overflow-y: scroll;
+}
+
+.so-title-element {
+    font-size: 2vw;
+    margin-top: 5vw;
+}

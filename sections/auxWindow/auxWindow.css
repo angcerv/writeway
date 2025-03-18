@@ -1,0 +1,211 @@
+@import "../style.css";
+
+/* unvisited link */
+a:link {
+    color: var(--primary-color-light);
+}
+  
+/* visited link */
+a:visited {
+    color: var(--secondary-color-theme);;
+}
+
+/* mouse over link */
+a:hover {
+    color: var(--primary-color-theme);
+}
+
+/* selected link */
+a:active {
+    color: var(--secondary-color-theme);;
+}
+
+button {
+    color: var(--primary-color-light);
+}
+
+.aux-input {
+    background-color: var(--secondary-color-dark);
+    width: 30vw;
+    height: 4.5vw;  
+    border: none;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--secondary-color-dark);
+    padding-left: 4.5vw;
+    color: var(--primary-color-light);
+    font-size: 1.6vw;
+    font-weight: var(--font-weight-light);  
+}
+
+.aux-input::placeholder {
+    font-size: 1.6vw;
+    color: var(--secondary-color-light);
+}
+
+.aux-input:focus {
+    border: 1px solid white;
+}
+
+.aux-input:active {
+    border: 1px solid white;
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox-label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-label .checkmark:after {
+    left: 4px;
+    top: -1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkbox-label:hover input ~ .checkmark {
+    background-color: var(--secondary-color-dark);
+}
+
+.checkbox-label input:checked ~ .checkmark {
+    background-color: var(--secondary-color-dark);
+}
+
+.checkbox-message {
+    display: inline-block;
+    font-size: 1.2vw;
+    margin-left: 9vw;
+}
+
+.divided-container {
+    display: grid;
+    grid-template-columns: 1.65fr 2fr;
+    height: 100%;
+    color: var(--primary-color-light);
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5vw;
+    width: 1.5vw;
+    background-color: var(--primary-color-dark);
+    border: 1px solid var(--primary-color-light);
+    border-radius: 2px;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.forms-message {
+    font-size: 1.5vw;
+    font-weight: var(--font-weight-light);
+    width: 27vw;
+    margin-top: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.left-btn {
+    background-color: var(--primary-color-theme); 
+    padding: 0.6vw 6.5vw 0.6vw 6.5vw;
+    margin-top: 2vw;
+    border: 1px solid var(--primary-color-light);
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    font-weight: var(--font-weight-medium);
+}
+
+.left-btn:hover {
+    background-color: var(--secondary-color-theme);
+}
+
+.left-btn:focus {
+    border: 1px solid var(--primary-color-theme);
+}
+
+.left-container {
+    display: grid;
+    background-color: var(--primary-color-theme);
+    text-align: center;
+}
+
+.left-grid-logo {
+    grid-template-rows: 4fr 2fr;
+}
+
+.left-message {
+    font-size: 1.5vw;
+    font-weight: var(--font-weight-light);   
+}
+
+.logo-slogan {
+    width: 40vw;
+    margin-top: 18vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-title {
+    height: 2.5vw;
+    margin-top: 2vw;
+    margin-left: 2.5vw;
+}
+
+.logo-title-left {
+    float: left;
+    height: 2.2vw;
+    margin-top: 2vw;
+    margin-left: 2.7vw;
+}
+
+.right-button {
+    margin-top: 3vw;
+    background-color: var(--primary-color-theme);
+    border-radius: 40px;
+    font-size: 1.9vw;
+    font-weight: var(--font-weight-medium);
+    width: 35vw;
+    height: 5vw;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.right-button:hover {
+    background-color: var(--secondary-color-theme);
+}
+
+.right-button:focus {
+    border: 1px solid white;
+    outline: 0;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.4);
+}
+
+.right-container {
+    display: grid;
+    background-color: var(--primary-color-dark);
+    text-align: center;
+}
+
+.right-title {
+    font-size: 4vw;
+    font-weight: var(--font-weight-medium);
+    margin-top: 10vw;
+}
